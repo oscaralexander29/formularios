@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML 5</title>
+</head>
+
+<body>
+    <!-- HEADEER ENCABEZADO -->
+    <header>
+        <h1>FORMULARIOS EN HTML 5</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Ejemplo 1</h2>
+            <!-- inicio formulario -->
+            <form>
+                <!-- Alfanumerico -->
+                <label for="">Nombre Completo:</label>
+                <input 
+                type="text" 
+                name="nombreCompleto" 
+                placeholder="Escriba aqui..."
+                spellcheck=""
+                size="20">
+                <br>
+                <br>
+                <!-- Campo para buscar -->
+                <label for="">Bucar</label>
+                <input type="search"
+                name="buscar"
+                placeholder="buscar en mi pagina">
+                <br>
+                <br>
+                <!-- Campo para telefono -->
+                <label for="">Telefono</label>
+                <input type="tel"
+                name="telefono"
+                placeholder="0000-0000">
+                <br>
+                <br>
+                <!-- Campo para URL -->
+                <label for="">URL</label>
+                <input type="url"
+                name="url"
+                placeholder="http://127.0.0.1:5500/formularios/index.html">
+                <br>
+                <br>
+                <!-- Campo para Email -->
+                <label for="">Email</label>
+                <input type="email"
+                name="email"
+                placeholder="oscarceron@gmail.com">
+                <br>
+                <br>
+                <!-- Campo para una clave o contraseña (password) -->
+                <label for="">Contraseña</label>
+                <input type="password"
+                name="clave"
+                placeholder="Escribe una clave">
+                <br>
+                <br>
+                <!-- Campo hidden o oculto -->
+                <label for="">Campo Oculto</label>
+                <input type="hidden"
+                name="token"
+               value="Clave">
+               <br>
+               <br>
+               <!-- TEXTA- Area  -->
+               <label for="">Text Area - Direccion, un comentario, etc.</label>
+               <textarea cols="20" 
+               rows="10"
+               name="direccion"
+               placeholder="Escriba una direccion Ejemplo: Ostuma">
+               </textarea>
+               <br>
+                <br>
+                <!-- Campo para numeros enteros  -->
+                <label for="">Numeros enteros</label>
+                <input type="number"
+                name="numero"
+                min=""
+                max="">
+                <br>
+                <br>
+                <!-- Campo para rangos  -->
+                <label for="">Campo para rangos</label>
+                <input type="range"
+                name="rango"
+                min=""
+                max="">
+            </form>
+            <!-- fin formulario -->
+        </section>
+    </main>
+    <!-- Pie de pagina -->
+    <footer>
+        <h3>
+        &copy; Copyrigth: Oscar Ceron
+    </h3>
+    </footer>
+</body>
+
+</html>

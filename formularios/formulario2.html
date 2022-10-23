@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML 5</title>
+</head>
+
+<body>
+    <!-- HEADEER ENCABEZADO -->
+    <header>
+        <h1>FORMULARIOS EN HTML 5</h1>
+    </header>
+    <!-- Contenido principal de la pagina web -->
+    <main>
+        <!-- secction 1 -->
+        <section>
+            <h2>Ejemplo 2 - FECHAS</h2>
+            <!-- inicio formulario -->
+            <form>
+                <label for="">Fecha:</label>
+                <input type="date" name="fecha">
+                <br>
+                <br>
+                <label for="">Hora</label>
+                <input type="time" name="hora">
+                <br>
+                <br>
+                <label for="">FECHA Y hora:</label>
+                <input type="datetime-local" name="fechahora">
+                <br>
+                <br>
+                <label for="">MES:</label>
+                <input type="month" name="mes">
+                <br>
+                <br>
+                <label for="">SEMANA</label>
+                <input type="week" name="semana">
+                <br>
+                <br>
+            </form>
+            <!-- FIN FORMULARIO -->
+        </section>
+
+        <section>
+            <h2>FORMULARIO DE CASILLAS O RADIOBUTTONS</h2>
+            <form>
+                <h3>CHECKBOX</h3>
+                <label for="">COMIDAS FAVORITAS</label>
+                <br>
+                <label for="">Carne</label>
+                <input type="checkbox" name="comidas" checked>
+                <br>
+                <label for="">Pollo</label>
+                <input type="checkbox" name="comidas">
+                <br>
+                <label for="">Venado</label>
+                <input type="checkbox" name="comidas">
+                <br>
+                <label for="">Puerco</label>
+                <input type="checkbox" name="comidas">
+                <br>
+                <h3>RADIOBUTTONS</h3>
+                <label for="">SEXO</label>
+                <br>
+                <label for="">Hombre</label>
+                <input type="radio" name="sexo"><br>
+                <label for="">Mujer</label>
+                <input type="radio" name="sexo">
+                <label for="">Prefiero no Decirlo</label>
+                <input type="radio" name="sexo">
+            </form>
+        </section>
+
+        <section>
+            <h2>FORMULARIO DE CAMPOS DE LISTAS</h2>
+            <form>
+                <!-- SELECT -->
+                <select name="pais">
+                    <option value="El Salvador">El Salvador</option>
+                    <option value="Panama">Panama</option>
+                    <option value="Inglaterra">Inglaterra</option>
+                    <option value="EEUU">EEUU</option>
+                    <option value="Guatemala">Guatemala</option>
+                </select>
+
+                <select name="combo" multiple>
+                    <!-- Fomato alternativo con atributo label -->
+                    <optgroup label="Opciones basicas"> 
+                        <option value="1" label="Opcion 1"></option>
+                    </optgroup>
+
+                    <optgroup label="Opciones avanzadas">
+                        <option value="2" label="Opcion 2"></option>
+                        <option value="3" label="Opcion 3"></option>
+                    </optgroup>
+                </select>
+
+                <input type="text" list="items">
+                <!-- Lista de opciones -->
+                <datalist id="items">
+                    <option value="1">Opcion 1</option>
+                    <option value="2">Opcion 2</option>
+                    <option value="3">Opcion 3</option>
+                </datalist>
+            </form>
+        </section>
+
+        <section>
+            <h2>CAMPO DE COLOR Y ARCHIVOS</h2>
+            <form
+            enctype="multipart/form-data"
+            action="formulario2.html"
+            method="post"
+            name="formularioregistro"
+            >
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name">
+            </fieldset>
+            <fieldset>
+                <legend>Color y archivos</legend>
+                <label for="color">Selecciona el color deseado:</label>
+                <!-- Color verdsa por defecto HEX(1B, F4, 4A) -->
+                <input type="color" name="color" id="color" value="#1BF44A">
+
+                <br>
+                <br>
+                <label for="adjunto">Selecciona un archivo</label>
+                <!-- Campo de seleccion de archivo -->
+                <input 
+                type="file" 
+                name="adjunto" 
+                id="adjunto" 
+                accept=".pdf,.jpg,.png" 
+                multiple
+                >
+            </fieldset>
+            <br>
+            <br>
+            <input 
+            type="submit" 
+            name="enviardatos" 
+            value="REGISTRAR INFORMACION"
+            >
+            <button type="buton">REGISTRAR</button>
+            <button type="reset">LIMPIAR DATOS DEL FORMULARIO</button>
+            </form>
+        </section>
+    </main>
+    <!-- Pie de pagina -->
+    <footer>
+        <h3>
+            &copy; Copyrigth: Oscar Ceron
+        </h3>
+    </footer>
+</body>
+
+</html>
